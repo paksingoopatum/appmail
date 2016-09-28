@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+   
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    
+
+    <link rel="stylesheet" type="text/css" href="jm/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery.js"></script>
+    <script src="jm/jquery.mobile-1.4.5.min.js"></script>
+    <title>Hello World</title>
+</head>
+
+<body>
+     <div data-role="page" id="mainmenu">
+        <div data-role="header" data-theme="b"><h3>Mail Alert</h3></div>
+        <div data-role="content"></div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+        	<a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-user ui-btn-icon-left ui-btn-a" data-transition="pop">Sign in</a>
+					<div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+					<form>
+					<div style="padding:10px 20px;">
+						<h3>Please sign in</h3>
+						<label for="un" class="ui-hidden-accessible">Username:</label>
+						<input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+						<label for="pw" class="ui-hidden-accessible">Password:</label>
+						<input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+						<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-right ui-icon-check">Sign in</button>
+						<a href ="register.html" button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-right ui-icon-carat-r">Register</button></a>
+					</div>
+				</form>
+			</div>
+        </div>
+    </div>
+</body>
+
+</html>
